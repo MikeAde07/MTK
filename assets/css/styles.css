@@ -10,18 +10,22 @@ header {
     display : flex;
     justify-content : space-between;
     flex-wrap : wrap;
+    background : #5A5A5A;
 }
 
 header h1 {
     font-weight : bold;
     font-size : 36px;
     margin : 0;
+    background : #39a6b2;
     
 }
 
 header a{
-    text-decoration : none;
-    color : #808080;
+
+    color : #39a6b2;
+    font-weight : bold;
+    font-size : 26px;
 }
 
 header nav {
@@ -40,4 +44,35 @@ header nav ul {
 header nav ul li a {
    padding : 10px 15px;
 
+}
+
+footer {
+    display : flex;
+    justify-content : space-between;
+    
+}
+
+.contact {
+    display : flex;
+    justify-content : space-between;
+    align-items : flex-end;
+    padding : 10px 35px
+}
+
+.about-me {
+   display : flex;
+   justify-content : space-evenly;
+   font-family : Arial, Helvetica, sans-serif;
+   padding : 50px;
+}
+
+.about-me h2 {
+    font-weight : bold;
+    font-size : 40px;
+}
+
+.work {
+    display : flex;
+    justify-content : space-evenly;
+    flex-wrap : wrap;
 }
