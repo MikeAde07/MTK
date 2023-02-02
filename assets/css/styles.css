@@ -6,7 +6,7 @@
 
 
 header {
-    padding : 20px 35px;
+    padding : 10px 35px;
     display : flex;
     justify-content : space-between;
     flex-wrap : wrap;
@@ -41,9 +41,29 @@ header nav ul {
     
 }
 
+header nav ul li:hover {
+    background-color : black;
+}
+
 header nav ul li a {
    padding : 10px 15px;
 
+}
+
+.hero {
+    display : flex;
+    justify-content : flex-end;
+    padding : 20px 35px;
+    background-image : url("../images/background.jpeg");
+    background-size : cover;
+    background-position : center;
+    background-position : 80%;
+}
+
+.hero h2 {
+    font-size : 30px;
+    font-family : Arial, Helvetica, sans-serif;
+    font-weight : bold;
 }
 
 footer {
@@ -52,12 +72,7 @@ footer {
     
 }
 
-.contact {
-    display : flex;
-    justify-content : space-between;
-    align-items : flex-end;
-    padding : 10px 35px
-}
+
 
 .about-me {
    display : flex;
@@ -73,6 +88,56 @@ footer {
 
 .work {
     display : flex;
-    justify-content : space-evenly;
+    justify-content : space-around;
     flex-wrap : wrap;
+    font-family : Arial, Helvetica, sans-serif;
+    padding : 50px;
+}
+
+.work h4 {
+    font-size : 24px;
+}
+
+.projects {
+    display : flex;
+    justify-content : space-between;
+    flex-wrap : wrap;
+
+}
+
+.project-one {
+    width : 30%;   
+}
+
+.project-one img {
+    flex : 1 40%;
+    width : 90%;
+    border : 5px solid #39a6b2;
+}
+
+.project-one:hover {
+    /*background : rgba(255, 255, 0, 1);*/
+    background-color: rgba(220, 220, 220, 0.8);
+}
+
+.project-one img:hover {
+    /*background : rgba(255, 255, 0, 1);*/
+    background-color: rgba(255, 255, 0, 0.5);
+    /*I want to highlight only the image transparent yellow when user hovers over it. Haven't been able to get it to work so far*/
+}
+
+.project-three {
+    width : 30%;
+}
+
+.work h2 {
+    font-weight : bold;
+    font-size : 40px;
+}
+
+.contact {
+    display : flex;
+    justify-content : space-between;
+    align-items : flex-end;
+    padding : 10px 35px
 }
