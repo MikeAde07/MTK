@@ -26,6 +26,7 @@ header a{
     color : #39a6b2;
     font-weight : bold;
     font-size : 26px;
+
 }
 
 header nav {
@@ -66,13 +67,6 @@ header nav ul li a {
     font-weight : bold;
 }
 
-footer {
-    display : flex;
-    justify-content : space-between;
-    
-}
-
-
 
 .about-me {
    display : flex;
@@ -86,7 +80,7 @@ footer {
     font-size : 40px;
 }
 
-.work {
+.work-one {
     display : flex;
     justify-content : space-around;
     flex-wrap : wrap;
@@ -94,15 +88,8 @@ footer {
     padding : 50px;
 }
 
-.work h4 {
+.work-one h4 {
     font-size : 24px;
-}
-
-.projects {
-    display : flex;
-    justify-content : space-between;
-    flex-wrap : wrap;
-
 }
 
 .project-one {
@@ -111,18 +98,19 @@ footer {
 
 .project-one img {
     flex : 1 40%;
-    width : 90%;
+    width : 100%;
     border : 5px solid #39a6b2;
 }
 
-.project-one:hover {
-    /*background : rgba(255, 255, 0, 1);*/
+/*.project-one:hover {
+    background : rgba(255, 255, 0, 1);
     background-color: rgba(220, 220, 220, 0.8);
-}
+} */
 
-.project-one img:hover {
+.run-img:hover {
     /*background : rgba(255, 255, 0, 1);*/
-    background-color: rgba(255, 255, 0, 0.5);
+    background-color: yellow;
+    opacity : 0.2;
     /*I want to highlight only the image transparent yellow when user hovers over it. Haven't been able to get it to work so far*/
 }
 
@@ -130,14 +118,67 @@ footer {
     width : 30%;
 }
 
-.work h2 {
+.work-one h2 {
     font-weight : bold;
     font-size : 40px;
+    /*padding-right : 250px;*/
 }
 
-.contact {
+.work-two {
+    display : flex;
+    justify-content : center;
+    flex-wrap : wrap;
+    font-family : Arial, Helvetica, sans-serif;
+}
+
+.project-two {
+    padding-right : 100px;
+}
+
+.project-two h4 {
+    font-size : 24px;
+}
+
+.project-three h4 {
+    font-size : 24px;
+}
+
+footer {
+    padding : 10px 35px;
     display : flex;
     justify-content : space-between;
-    align-items : flex-end;
-    padding : 10px 35px
+    flex-wrap : wrap;
+    background : #5A5A5A;
+}
+
+footer h2 {
+    font-weight : bold;
+    font-size : 24px;
+    margin : 0;
+    background : #39a6b2;
+}
+
+footer a{
+
+    color : #39a6b2;
+    font-weight : bold;
+    font-size : 16px;
+
+}
+
+footer nav ul {
+    display : flex;
+    flex-wrap : wrap;
+    justify-content : space-between;
+    align-items : center;
+    list-style : none; 
+}
+
+footer nav ul li:hover {
+    background-color : black;
+}
+
+footer nav ul li a {
+   padding : 10px 15px;
+
 }
